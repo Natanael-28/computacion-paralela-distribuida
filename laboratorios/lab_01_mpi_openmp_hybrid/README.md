@@ -191,14 +191,14 @@ set OMP_NUM_THREADS=2 && mpiexec -n 2 .\mpi_04.exe   # Híbrido 2x2
 set OMP_NUM_THREADS=2 && mpiexec -n 4 .\mpi_04.exe   # Híbrido 4x2
 ```
 
-**Tabla de resultados:** _(reemplazar con los tiempos medidos)_
+**Tabla de resultados:** 
 
-| Configuración   | Procesos MPI | Hilos OMP | Tiempo paralelo (s) | Tiempo secuencial (s) | Speedup |
-| --------------- | :----------: | :-------: | :-----------------: | :-------------------: | :-----: |
-| Solo MPI        |      4       |     1     |       _____         |        _____          | _____×  |
-| Solo OMP        |      1       |     4     |       _____         |        _____          | _____×  |
-| MPI + OMP       |      2       |     2     |       _____         |        _____          | _____×  |
-| MPI + OMP       |      4       |     2     |       _____         |        _____          | _____×  |
+| Configuración   | Procesos MPI | Hilos OMP |    Tiempo paralelo (s)   |    Tiempo secuencial (s)   | Speedup |
+| --------------- | :----------: | :-------: |    :-----------------:   |     :-------------------:  | :-----: |
+| Solo MPI        |      4       |     1     |       0.003736 s         |        0.002886 s          | 0.77x  |
+| Solo OMP        |      1       |     4     |       0.003842 s         |        0.002719 s          | 0.71x  |
+| MPI + OMP       |      2       |     2     |       0.003283 s         |        0.002339 s          | 0.71x  |
+| MPI + OMP       |      4       |     2     |       0.005651 s         |        0.002660 s          | 0.47x  |
 
 **Pantallazos:**
 

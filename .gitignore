@@ -1,0 +1,13 @@
+# Ejecutables y binarios de C
+*.exe
+*.o
+*.obj
+*.out
+
+# Archivos temporales del sistema
+Thumbs.db
+.DS_Store
+
+# Carpetas de editores
+.vscode/
+.idea/

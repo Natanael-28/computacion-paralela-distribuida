@@ -30,12 +30,12 @@ Ejecutado en Google Colab con GPU T4 (compute capability 7.5).
 
 ### Compilación
 ```bash
-nvcc ejercicio2_matriz.cu -o ejercicio2_matriz -arch=sm_75
+nvcc ejercicio2_matriz.cu -o ejercicio2
 ```
 
 ### Ejecución
 ```bash
-./ejercicio2_matriz
+./ejercicio2
 ```
 
 ## Salida esperada
@@ -56,16 +56,6 @@ Matriz recuperada desde GPU:
 
 Se agregó un bucle de verificación al final del `main` que recorre cada elemento de ambos arreglos y compara la diferencia absoluta contra una tolerancia de `1e-5f`. Si encuentra discrepancias, las imprime indicando posición y valores; al final imprime el número total de errores. Se usa `fabsf` (de `<math.h>`) en lugar de `==` porque la comparación directa de floats no es confiable: errores de representación pueden hacer que dos valores "iguales" difieran en el último bit. En este caso, como la GPU solo almacena los bytes sin operar sobre ellos, los datos vuelven idénticos y el contador de errores debe ser `0`.
 
-## Comandos
 
-Ejecutado en Google Colab con GPU T4 (compute capability 7.5).
-
-### Compilación
-
-!nvcc ejercicio2_matriz.cu -o ejercicio2_matriz
-
-### Ejecución
-
-!./ejercicio2_matriz
 
 ![Compilación y ejecución del Ejercicio 2](../img/ej2_evidencia.png)

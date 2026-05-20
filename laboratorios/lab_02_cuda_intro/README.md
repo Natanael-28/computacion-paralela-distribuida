@@ -22,6 +22,10 @@ Como el equipo de desarrollo no cuenta con una GPU NVIDIA local, **todos los eje
 | Flag de arquitectura | `-arch=sm_75` |
 
 ## Estructura del repositorio
+
+## Estructura del repositorio
+
+````text
 lab_02_cuda_intro/
 ├── README.md                        ← este archivo
 ├── reporte/
@@ -52,8 +56,9 @@ lab_02_cuda_intro/
 │   ├── ejercicio8_tiempo.cu
 │   └── README.md
 └── ejercicio9_producto_punto/
-├── ejercicio9_producto_punto.cu
-└── README.md
+    ├── ejercicio9_producto_punto.cu
+    └── README.md
+````
 ## Ejercicios
 
 ### Categoría 1 — Transferencia de Datos CPU ↔ GPU

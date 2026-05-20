@@ -1,20 +1,11 @@
 /*
  * ============================================================
  *  Ejercicio 1 - Hola Mundo MPI
- *  Lab 01 - Programacion Hibrida MPI + OpenMP
  *  Autores: Josue Natanael Reyes & Marlon Arevalo
  * ============================================================
  *
- *  Cada proceso MPI imprime su rank (ID) y el total de procesos.
- *  El proceso con rank 0 actua como "maestro" e imprime un
- *  mensaje final adicional.
- *
- *  Compilacion:  mpicc mpi_01_hola.c -o mpi_01_hola.exe
- *  Ejecucion:    mpiexec -n 4 .\mpi_01_hola.exe
- *                mpiexec -n 2 .\mpi_01_hola.exe
- * ============================================================
- */
-
+  */
+ 
 #include <mpi.h>
 #include <stdio.h>
 

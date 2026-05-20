@@ -29,7 +29,6 @@ Ejecutado en Google Colab con GPU T4 (compute capability 7.5).
 ### Compilación
 
 !nvcc ejercicio1_hola_gpu.cu -o ejercicio1
-!./ejercicio1
 
 ### Ejecución
 

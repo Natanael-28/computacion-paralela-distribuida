@@ -66,4 +66,4 @@ Se observa que para procesar N = 1,000,000 elementos con bloques de 256 hilos se
 
 ## Evidencia
 
-!Compilación y ejecución del Ejercicio 4
+![Compilación y ejecución del Ejercicio 4](../img/ej4_evidencia.png)
